@@ -20,3 +20,6 @@ cabal.project.local
 cabal.project.local~
 .HTF/
 .ghc.environment.*
+/client/node_modules/
+/client/bower_components/
+/client/output/
