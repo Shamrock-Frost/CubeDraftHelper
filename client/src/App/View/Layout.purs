@@ -51,26 +51,26 @@ css = do
     textTransform uppercase
     letterSpacing (4.0 #px)
 
-  fromString "a" ? do
+  fromString ".homePageButton" ? do
     display inlineBlock
     borderRadius (2.0 #px) (2.0 #px) (2.0 #px) (2.0 #px)
     padding (12.0 #px) (30.0 #px) (12.0 #px) (30.0 #px)
     textDecoration noneTextDecoration
 
-  fromString ".host" ? do
+  fromString "#host" ? do
     border solid (2.0 #px) green
     color green
     marginRight (10.0 #px)
 
-  fromString ".host:hover" ? do
+  fromString "#host:hover" ? do
     backgroundColor green
     color white
 
-  fromString ".join" ? do
+  fromString "#join" ? do
     border solid (2.0 #px) blue
     color blue
     marginLeft (10.0 #px)
 
-  fromString ".join:hover" ? do
+  fromString "#join:hover" ? do
     backgroundColor blue
     color white
