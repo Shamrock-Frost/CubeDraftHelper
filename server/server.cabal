@@ -21,3 +21,8 @@ executable server
                      , Spock >= 0.11
                      , mtl
                      , text
+                     , containers
+                     , scalpel
+                     , sqlite-simple
+                     , uri-encode
+  other-modules:       Database

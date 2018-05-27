@@ -1,12 +1,15 @@
 {-# LANGUAGE OverloadedStrings, LambdaCase #-}
 module Main where
 
+import Database
+
 import Web.Spock
 import Web.Spock.Config
 
 import Control.Monad.Trans
 import Data.IORef
 import qualified Data.Text as T
+import qualified Data.Set as S
 
 data PlayerStatus = Host | Join deriving (Show, Read)
 
@@ -15,10 +18,12 @@ data AppState = NoAction
               | InLobby PlayerStatus
 
 main :: IO ()
-main = do
+main = mkDatabase {-
+       do
   ref <- newIORef NoAction
   spockCfg <- defaultSpockCfg EmptySession PCNoDatabase ref
   runSpock 8000 (spock spockCfg app)
+-}
 
 app :: SpockM () Session (IORef AppState) ()
 app = do get (root <//> static "host") $ handleReq Host
