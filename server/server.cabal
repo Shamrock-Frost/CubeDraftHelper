@@ -26,3 +26,4 @@ executable server
                      , sqlite-simple
                      , uri-encode
   other-modules:       Database
+                     , Scraper

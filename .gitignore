@@ -23,3 +23,5 @@ cabal.project.local~
 /client/node_modules/
 /client/bower_components/
 /client/output/
+*~
+*.db
